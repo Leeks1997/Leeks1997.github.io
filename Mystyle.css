@@ -1,0 +1,93 @@
+.fullscreen {
+  width:100%; height: 100%;
+  position : fixed;
+  background-image: url("사진/첼시배경4.png");
+  background-position: center center;
+  background-size: cover;
+}
+.fullscreen2{
+  width:100%; height: 100%;
+  position : fixed;
+  background-image: url("사진/드록바배경.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+.fullscreen3{
+  width:100%; height: 100%;
+  position : fixed;
+  background-image: url("사진/램파드배경화면.png");
+  background-position: center center;
+  background-size: cover;
+}
+.fullscreen4{
+  width:100%; height: 100%;
+  position : fixed;
+  background-image: url("사진/테리.png");
+  background-position: center center;
+  background-size: cover;
+}
+.fullscreen5{
+  width:100%; height: 100%;
+  position : fixed;
+  background-image: url("사진/체흐배경화면.png");
+  background-position: center center;
+  background-size: cover;
+}
+header{
+  height : 40px;
+  margin : 30px;
+  color : blue;
+}
+nav{
+  width:1100px;
+  margin-left : 30px;
+}
+nav ul{
+  list-style : none;
+  text-align : center;
+  border-top : 2px solid red;
+  border-bottom : 2px solid red;
+  padding : 10px 0;
+}
+nav ul li{
+  display : inline;
+  text-transform : uppercase;
+  padding : 0 30px;
+  letter-spacing: 3px;
+}
+nav ul li a {
+  text-decoration: none;
+  color : blue;
+}
+nav ul li a:hover {
+  text-decoration: underline;
+  color : yellow;
+}
+aside#left{
+  width:200px;
+  float : left;
+}
+#left ul{
+  color:#fff;
+  list-style : none;
+  text-indent : 10px;
+}
+#left h4{
+  margin-left:40px;
+  margin-bottom:10;
+  background: #e3e3e3;
+}
+#left ul li {
+  background: #3f3f3f;
+  line-height: 30px;
+  font-size : 15px;
+}
+#left ul li a{
+  text-decoration : none;
+  color: #fff;
+  display : block;
+
+}
+#left ul li a:hover{
+  background: #d03;
+}
