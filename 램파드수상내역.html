@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ko" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>램파드 수상내역</title>
+        <style>
+          button {
+            width:100px;
+            height:30px;
+            border:2px solid red;
+          }
+          img {
+            border:3px solid blue;
+          }
+          body{
+            color : white;
+          }
+        </style>
+       <script src="js/jquery-3.3.1.js"></script>
+      <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
+       <script>
+        $(document).ready(function(){
+          $("#btn1").click(function(){
+            $("#idol").animate({ marginLeft: "+=300px"},"slow");
+            $("#idol").animate({ marginLeft: "-=300px"},"slow");
+          });
+          $("#btn2").click(function(){
+            $("#idol").animate({ height: "toggle" },"slow");
+          });
+        });
+      </script>
+      </head>
+      <body>
+        <h2>슈퍼 프랭키 수상내역~</h2><br>
+          <button id="btn1">좌우 이동</button>
+          <button id="btn2">이미지 토글</button>
+          <br>
+        <img src="사진/램파드수상내역.png" id="idol" width="700" height="500"><br>
+      </body>
+    </html>

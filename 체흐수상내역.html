@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="ko" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>두번째</title>
+        <style>
+          #gallery{
+            width:700px;
+            height:190px;
+            background: #D1B2FF;
+            border:2px solid black;
+            border-radius: 15px;
+          }
+          ul{
+            list-style: none;
+          }
+          ul li{
+            display:inline;
+            float:left;
+            padding:5px;
+          }
+          .bigpic{
+            position:absolute;
+            display:none;
+            left:100px;
+            width:400px;
+            height:340px;
+          }
+          .smallpic{
+            border:2px dotted red;
+            width:200px;
+            height:140px;
+          }
+          body{
+            color : white;
+          }
+        </style>
+      <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
+       <script>
+        $(document).ready(function(){
+          $("#s1").click(function(){
+            $("#big1").fadeIn(1000);
+          });
+          $("#big1").click(function(){
+            $("#big1").fadeOut(1000);
+          });
+          $("#s2").click(function(){
+            $("#big2").fadeIn(1000);
+          });
+          $("#big2").click(function(){
+            $("#big2").fadeOut(1000);
+          });
+          $("#s3").click(function(){
+            $("#big3").fadeIn(1000);
+          });
+          $("#big3").click(function(){
+            $("#big3").fadeOut(1000);
+          });
+        })
+      </script>
+      </head>
+      <body>
+        <h1> 체흐선수의 수상내역 </h1>
+        <div id="gallery">
+          <ul>
+            <li>
+              <img src="사진/체흐수상내역.png" id="s1" class="smallpic">
+              <img src="사진/체흐수상내역.png" id="big1" class="bigpic">
+            </li>
+            <li>
+              <img src="사진/체흐대회기록.png" id="s2" class="smallpic">
+              <img src="사진/체흐대회기록.png" id="big2" class="bigpic">
+            </li>
+            <li>
+              <img src="사진/체흐수상.png" id="s3" class="smallpic">
+              <img src="사진/체흐수상.png" id="big3" class="bigpic">
+            </li>
+          </ul>
+        </div>
+      </body>
+    </html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ko" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style>
+          .special {
+            width:500px;
+            height:500px;
+            border:2px solid black;
+            float:center;
+          }
+          div{
+            margin-left: 20px;
+            margin-right: 20px;
+            color : white;
+            font-size: 25px;
+          }
+        </style>
+          <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
+          <script>
+          $(document).ready(function(){
+            $('#hide').click(function(){
+              $('.special').hide(1000);
+            });
+            $('#show').click(function(){
+              $('.special').show(1000);
+            });
+            $('#toggle').click(function(){
+              $('.special').toggle(1000);
+            });
+          });
+          </script>
+      </head>
+      <body>
+        <h2> <div>버튼을 클릭하면 숨기기,보기,토글!</div> </h2>
+         <br><br>
+        <form>
+          <input type="button" id="hide" value="그림숨기기">
+          <input type="button" id="show" value="그림보기">
+          <input type="button" id="toggle" value="그림토글">
+        </form>
+        <div class="special" id="sun">
+          <img src="사진/chelsea.jpg" width=550 height=500>
+        </div>
+      </body>
+    </html>

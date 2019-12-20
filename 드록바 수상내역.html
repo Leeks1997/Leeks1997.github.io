@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="ko" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+        <style>
+          #gallery {
+            width:400px;
+            border : 3px solid pink;
+            border-radius : 10px;
+          }
+          #gallery figure{
+            margin:10px 20px;
+            color:pink;
+          }
+          #gal{
+            width:400px;
+            border : 3px solid yellow;
+            border-radius : 20px;
+          }
+          #gal figure{
+            margin :20px 10px;
+            color : #FFE400;
+          }
+        </style>
+      <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('img').click(function(){
+          $('img').hide('slow');
+          $('#gallery').css('background-color','blue');
+        });
+        $(document).ready(function(){
+          $('img').click(function(){
+            $('img').hide('slow');
+            $('#gal').css('background-color','#D941C5');
+          });
+      });
+      });
+    </script>
+      </head>
+      <body>
+        <div id="gallery">
+            <figure>
+              <figcaption><b>팀 수상내역</b>
+                </figcaption>
+              <img src="사진/드록바 수상내역(팀).png" width=330 height=400>
+            </figure>
+          </div>
+          <br><br>
+        <div id="gal">
+          <figure>
+            <figcaption><b>개인 수상내역</b>
+              </figcaption>
+            <img src="사진/드록바수상내역(개인).png" width=330 height=600>
+          </figure>
+        </div>
+      </body>
+    </html>

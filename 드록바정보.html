@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>드록바정보</title>
+        <style>
+          p{ color : pink;
+             line-height : 10px;}
+          ul {list-style : none;}
+          ul li {
+            display:block;
+            float:left;
+            padding:10px;
+            border:5px solid pink;
+            margin-right:10px;
+          }
+          ul li:hover{cursor:pointer;}
+          hr{clear:both;
+             visibility: hidden;
+             height:5px;}
+            </style>
+      <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
+        <script>
+         $(document).ready(function(){
+          $('*').css("background","#4948FF").css("color","white");
+        $('#hideP').click(function(){
+          $('p').hide();
+        });
+        $('#showP').click(function(){
+          $('p').show();
+        });
+         });
+        </script>
+      </head>
+      <body>
+        <h2>드록바정보</h2>
+        <ul>
+          <li id="hideP">텍스트 감추기</li>
+          <li id="showP">텍스트 표시하기</li>
+        </ul>
+        <hr>
+        <b>
+        <p>디디에 드록바는 코트디부아르의 전 축구선수이다.</p>
+        <p>선수 시절 포지션은 스트라이커이다.</p>
+        <p> 2000년대를 풍미했던 당대 최고의 스트라이커 중 하나로 </p>
+        <p> 코트디부아르와 첼시 FC 역대 최고의 스트라이커로 명성이 높다.</p>
+        <p> 그의 별명은 전쟁을 멈춘 사나이, 검은 예수라 불리면서 흔히 드멘이라고 불렀다.</p>
+        <p>프로 통산 득점 362골,국가대표에서는 104경기 65골을 넣었다.</p>
+      </b>
+      </body>
+    </html>

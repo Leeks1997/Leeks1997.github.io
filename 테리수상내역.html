@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Animate 확대하기</title>
+        <style>
+          input{
+            background:pink;
+            width:150px;
+            height:30px;
+            border:4px solid red;
+          }
+          img{
+          border:4px solid blue;
+          }
+          body{
+            color : white;
+          }
+        </style>
+      <script src="http://code.jquery.com/jquery-3.4.1.js"></script>
+        <script>
+          $(document).ready(function(){
+            $("#btn").click(function(){
+              $("img").animate({width:"600px"},1000);
+              $("img").animate({height:"398px"},1000);
+              $("img").animate({borderRadius: "50px"},1000);
+            });
+          });
+          </script>
+      </head>
+      <body>
+        <img src="사진/테리수상내역.png" width="300" height="200"><br><br>
+        <h2>존 테리선수의 수상내역이에요</h2>
+        <input id="btn" value="확대하기">
+        <br><br>
+      </body>
+    </html>
